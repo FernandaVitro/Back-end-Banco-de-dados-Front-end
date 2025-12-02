@@ -116,7 +116,7 @@ app.post("/Cadastrar", async (req, res) => {
             return res.json({ resposta: "E-mail já cadastrado" });
         }
 
-        
+        // senha de dificil acesso
         const hash = crypto.createHash("sha256").update(senha_cadastro).digest("base64");
 
         
