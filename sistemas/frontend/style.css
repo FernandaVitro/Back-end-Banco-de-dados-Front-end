@@ -1,19 +1,14 @@
-/* =========================================================
-   RESET
-========================================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo para a logo */
-/* Estilo para a logo */
-/* Estilo para a logo */
 .logo {
     position: absolute; /* Posiciona a logo em relação ao seu contêiner pai */
     top: 10px; /* Distância do topo */
-    left: 750px; /* Distância da esquerda para deixar mais espaço à esquerda */
+    left: 710px; /* Distância da esquerda para deixar mais espaço à esquerda */
     width: 50px; /* Tamanho da logo ajustado */
     height: 50px; /* Tamanho da logo ajustado */
     border-radius: 50%; /* Deixa a logo redonda */
@@ -51,9 +46,7 @@ body {
     font-size: 13px;
 }
 
-/* =========================================================
-   MENU SUPERIOR FIXO
-========================================================= */
+/* MENU SUPERIOR FIXO */
 .fundo_btn {
     position: fixed;
     top: 3px; /* COLADO NO TOPO */
@@ -90,9 +83,7 @@ body {
     transform: scale(1.03);
 }
 
-/* =========================================================
-   TELAS — SEM SCROLL E DESGRUDADAS DO MENU
-========================================================= */
+/* TELAS  */
 .tela {
     position: absolute;
     top: 7%; /* 🔥 ESPAÇO PERFEITO ENTRE MENU E CONTEÚDO */
