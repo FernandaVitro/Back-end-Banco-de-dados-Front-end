@@ -49,7 +49,7 @@ app.post("/FaleConosco", async (req, res) => {
             return res.status(400).json({ "resposta": "Esse email não está cadastrado, faça o cadastro" });
         }
 
-        // Preparar e Salvar a Mensagem de Contato na tabela 'Contato' ---
+        // Preparar e Salvar a Mensagem de Contato na tabela 'Contato'
 
         const Data_envio = new Date() // Grava data/hora no servidor
         const Status = "Aguardando Leitura"
@@ -173,4 +173,5 @@ app.post("/login", async (req, res) => {
         return res.json({ resposta: "Erro no servidor" });
     }
 });
+
 
