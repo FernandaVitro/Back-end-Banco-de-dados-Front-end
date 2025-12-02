@@ -32,11 +32,10 @@
         <button class="btn branco" id="btn_trabalhe" data-tela="trabalhe" style="display:none;"> Trabalhe </button>
     </div>
 
-    <!-- ========================================================= -->
-    <!-- ======================== TELAS =========================== -->
-    <!-- ========================================================= -->
+    
+    <!--TELAS -->
 
-    <!-- ===== HOME ===== -->
+    <!-- HOME -->
     <div class="tela" id="tela_home">
         <div class="div_home">
             <h1 class="divh1">Revolucionando a Saúde com Inteligência Artificial</h1>
@@ -72,9 +71,9 @@
         </div>
     </div>
 
-    <!-- ===== LOGIN (importado do login.html) ===== -->
+    <!--  LOGIN  -->
     <div class="tela" id="tela_login">
-        <div class="div_login" id="div_login"> <!-- Adicionado id="div_login" para consistência -->
+        <div class="div_login" id="div_login"> 
             <h2>Login</h2>
 
             <label class="label_login" for="Email">Email</label>
@@ -123,7 +122,7 @@
 
     </div>
 
-    <!-- ===== CONTATO (importado do contato.html) ===== -->
+    <!-- CONTATO -->
     <div class="tela" id="tela_contato">
         <div class="pagina_contato">
             <div class="div_contato">
@@ -153,7 +152,7 @@
         </div>
     </div>
 
-    <!-- ===== TRABALHE CONOSCO ===== -->
+    <!-- TRABALHE CONOSCO -->
     <div class="tela" id="tela_trabalhe">
         <div class="div_trabalhe" style="margin-top: 80px;">
             <h2>Vagas Abertas</h2>
@@ -189,9 +188,6 @@
         </div>
     </div>
 
-    <!-- ========================================================= -->
-    <!-- ===================== SCRIPT GERAL ======================= -->
-    <!-- ========================================================= -->
     <script>
         // Esconde todas as telas
         function ocultarTelas() {
@@ -237,9 +233,9 @@
 
 
 
-        // ===== Cadastro =====
+        // CADASTRO
         document.getElementById("cadastrarBtn").addEventListener("click", async () => {
-            // Declare os elementos DOM
+
             const nome = document.getElementById('nome');
             const cpf = document.getElementById('cpf');
             const senha = document.getElementById('senha');
@@ -247,8 +243,8 @@
             const data_nasc = document.getElementById('data_nasc');
             const endereco = document.getElementById('endereco');
             const telefone = document.getElementById('telefone');
-            const resultado_login = document.querySelector('#area_cadastro .resultado_login');  // Corrigido: especifica a div do cadastro
-
+            const resultado_login = document.querySelector('#area_cadastro .resultado_login');  
+            
             // Validação básica
             if (!nome.value || !email.value || !senha.value) {
                 resultado_login.textContent = 'Preencha pelo menos Nome, Email e Senha.';
@@ -285,15 +281,14 @@
             }
         });
 
-        // ===== Login =====
+        // LOGIN
         document.getElementById("loginBtn").addEventListener("click", async () => {
-            // Declare os elementos DOM
+            
             const login_email = document.getElementById('Email');
             const login_senha = document.getElementById('Senha');
-            const resultado_login = document.querySelector('.resultado_login');  // Mantido: pega a primeira (do login)
+            const resultado_login = document.querySelector('.resultado_login');
             const btn_trabalhe = document.getElementById('btn_trabalhe');
 
-            // Validação básica
             if (!login_email.value || !login_senha.value) {
                 resultado_login.textContent = 'Preencha Email e Senha.';
                 return;
